@@ -4,7 +4,7 @@ Here's an OpenBox theme that was made based on this setup by u/adi1090x on r/uni
 
 It's called Nordic.
 
-![Preview Image](themes/Nordic-Openbox/nordic-openbox.png)
+![Preview Image](./nordic-openbox.png)
 
 Please visit the original repository of this awesome theme at [Nordic](https://github.com/EliverLara/Nordic)
 
