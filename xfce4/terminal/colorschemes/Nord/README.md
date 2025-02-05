@@ -2,12 +2,6 @@
 
 <p align="center">Designed for a fluent and clear workflow based on the <a href="https://www.nordtheme.com" target="_blank">Nord</a> color palette.</p>
 
-<p align="center">
-  <picture>
-    <img src="https://raw.githubusercontent.com/nordtheme/xfce-terminal/develop/src/assets/scrot-colortest.png" />
-  </picture>
-</p>
-
 ## Getting started
 
 ### Installation
@@ -42,9 +36,4 @@ Syntax: `install.sh [OPTIONS]`
 1. Open the _Edit_ menu and select _Preferences_
 2. Switch to the _Colors_ tab
 3. Select `Nord` from the _Presets_ drop-down menu
-
-<p align="center">
-  <picture>
-    <img src="https://raw.githubusercontent.com/nordtheme/xfce-terminal/develop/src/assets/scrot-readme-color-preset.png" />
-  </picture>
-</p>
+4. Done! :)
