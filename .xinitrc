@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # set keyboard layout to colemak (before loading ~/.Xmodmap)
-setxkbmap -model pc104 -layout us -variant colemak
+setxkbmap -model pc104 -layout us
 
 # merge in defaults and keymaps
 sysresources=/etc/X11/xinit/.Xresources
@@ -24,11 +24,6 @@ if [ -d $trash ]; then rm -rf ${trash}/*; fi
 # LC_ALL will always override LANG and all the other LC_* variables,
 # whether they are set or not
 export LC_ALL=en_CA.UTF-8
-
-# configure thinkpad trackpoint
-if command -v $(xinput list | grep 'TrackPoint' &> /dev/null); then
-  xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 1.0
-fi
 
 # start window manager
 #exec /usr/X11R7/bin/ctwm -W
