@@ -1,0 +1,36 @@
+# detect if a second display is attached, make it the primary display, and
+# position it above the first display
+~/bin/dual_display --above &
+
+# set background color (`hsetroot` plays nice with picom)
+hsetroot -solid "#000000"
+
+# override xrandr auto setting and set background
+(sleep 2; if [ -x ~/.xrandr_custom ]; then ~/.xrandr_custom; fi; ~/.fehbg) &
+
+# compositor
+picom &
+
+# notifications
+dunst -config ~/.config/dunst/dunstrc &
+
+# panel - taskbar, system tray, battery, clock
+tint2 &
+
+# clipboard
+#greenclip daemon &
+
+# volume control
+#(sleep 15; volumeicon) &
+
+# network manager
+#nm-applet &
+
+# set screen to maximum brightness
+#xbacklight -set 100 &
+
+# power
+#xfce4-power-manager &
+
+# launch terminal
+xfce4-terminal &
