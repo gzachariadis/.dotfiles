@@ -23,7 +23,7 @@ if [ -d $trash ]; then rm -rf ${trash}/*; fi
 # locale
 # LC_ALL will always override LANG and all the other LC_* variables,
 # whether they are set or not
-export LC_ALL=en_CA.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # start window manager
 #exec /usr/X11R7/bin/ctwm -W
